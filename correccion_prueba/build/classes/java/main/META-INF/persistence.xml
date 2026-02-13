@@ -1,0 +1,35 @@
+<persistence>
+    <persistence-unit name="avanzada">
+        <class>com.programacion.avanzada.prueba.db.Project</class>
+        <class>com.programacion.avanzada.prueba.db.Task</class>
+        <class>com.programacion.avanzada.prueba.db.Usuario</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://127.0.0.1:5432/pa2-prueba"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="postgres"/>
+
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.highlight_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+            <property name="jakarta.persistence.schema-generation.scripts.action" value="create"/>
+            <property name="jakarta.persistence.schema-generation.scripts.create-target" value="db-prueba.sql"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
